@@ -17,6 +17,7 @@
 :root {
     --primary: #145EFC;
     --dark-color: #040404;
+    --page-bg: #F2EFEB;
     --primary-font: 'ppsigflow';
 }
 
@@ -58,6 +59,12 @@ body {
     font-size: 56px;
     line-height: 72px;
 }
+.w-45 {
+    width: 45px;
+}
+.h-40 {
+    height: 40px;
+}
 
 .pager {
     z-index: 1;
@@ -75,8 +82,8 @@ body {
     position: absolute;
 }
 
-.page:nth-child(1) {
-    background-color: #F2EFEB;
+.page {
+    background-color: var(--page-bg);
 }
 
 /* First Page */
@@ -127,6 +134,36 @@ body {
 }
 .second-slide-textbox {
     max-width: 450px;
+}
+
+/* Third Slid */
+.vertical-border-img {
+    transform: rotate(90deg);
+}
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+}
+.third-page-icon1 {
+    position: absolute;
+    top: 100px;
+    left: -220px;
+}
+.third-page-icon2 {
+    position: absolute;
+    bottom: 200px;
+    right: -180px;
+}
+
+/* Fourth Page */
+.logo-alt {
+    max-width: 300px;
+}
+.right-arrow-lg {
+    max-width: 500px;
+}
+.line-shape {
+    max-width: 300px;
 }
 
 /* Footer */
