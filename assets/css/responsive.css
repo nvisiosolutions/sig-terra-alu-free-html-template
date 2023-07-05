@@ -1,14 +1,14 @@
 @media screen and (max-width: 540px) {
     .fs-md {
-        font-size: 14px;
+        font-size: 13px;
         line-height: 18px;
     }
     .fs-lg {
-        font-size: 18px;
+        font-size: 13px;
         line-height: normal;
     }
     .fs-xl {
-        font-size: 24px;
+        font-size: 16px;
     }
     .fs-xl-m {
         font-size: 16px;
@@ -20,6 +20,10 @@
     .fs-xxl-m {
         font-size: 24px;
         line-height: 32px;
+    }
+    .fs-xxl-mx {
+        font-size: 18px;
+        line-height: 26px;
     }
     .w-45 {
         width: 30px;
@@ -38,16 +42,15 @@
     }
     .logo {
         max-width: 50px;
-        top: 40px !important;
+        top: 10px !important;
     }
-    .pack-75-text,
-    .pack-21-text {
-        font-size: 11px;
-        top: 0;
+    .pack-75-text, .pack-21-text {
+        font-size: 9px;
+        top: -20px;
     }
     .pack-upper-textbox img {
         width: 120px;
-        margin-top: -27px;
+        margin-top: -50px;
         display: inline-block;
         margin-left: -15px;
     }
