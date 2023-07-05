@@ -2,7 +2,7 @@ const slides = document.querySelectorAll(".page");
 const allPage = document.getElementById('all-page')
 const currentPage = document.getElementById('current-page')
 // current slide counter
-let curSlide = 0;
+let curSlide = 2;
 // maximum number of slides
 let maxSlide = slides.length - 1;
 // select next slide button
@@ -19,6 +19,9 @@ slides.forEach((slide, indx) => {
     slide.style.transform = `translateY(${100 * (indx - curSlide)}%)`;
 });
 
+prevSlide.disabled = true
+nextSlide.disabled = false
+
 // add event listener and next slide functionality
 nextSlide.addEventListener("click", function () {
     if (curSlide === maxSlide) {
@@ -28,6 +31,13 @@ nextSlide.addEventListener("click", function () {
     }
 
     currentPage.innerHTML = curSlide + 1
+    
+    prevSlide.disabled = false
+    if (curSlide + 1 === 4) {
+        nextSlide.disabled = true
+    } else {
+        nextSlide.disabled = false;
+    }
 
     slides.forEach((slide, indx) => {
         slide.style.transform = `translateY(${100 * (indx - curSlide)}%)`;
@@ -45,6 +55,13 @@ prevSlide.addEventListener("click", function () {
     }
 
     currentPage.innerHTML = curSlide + 1
+
+    nextSlide.disabled = false
+    if (curSlide + 1 === 1) {
+        prevSlide.disabled = true;
+    } else {
+        prevSlide.disabled = false;
+    }
   
     //   move slide by 100%
     slides.forEach((slide, indx) => {
