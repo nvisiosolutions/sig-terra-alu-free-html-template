@@ -19,9 +19,11 @@
     --dark-color: #040404;
     --primary-font: 'ppsigflow';
 }
+
 body {
     font-family: var(--primary-font);
     position: relative;
+    color: var(--dark-color);
 }
 
 .color-primary {
@@ -38,16 +40,19 @@ body {
     line-height: 20px;
 }
 .fs-md {
-    font-size: 28px;
-    line-height: 38px;
+    font-size: 24px;
+    line-height: 32px;
 }
 .fs-lg {
-    font-size: 32px;
+    font-size: 28px;
     line-height: normal;
 }
+.fs-xl {
+    font-size: 32px;
+}
 .fs-xxl {
-    font-size: 72px;
-    line-height: 80px;
+    font-size: 56px;
+    line-height: 72px;
 }
 
 .pager {
@@ -72,7 +77,52 @@ body {
 
 /* First Page */
 .pack {
-    margin-left: -285px;
+    margin-left: -230px;
+}
+.pack img {
+    max-width: 800px;
+}
+
+/* Second page */
+.second-page-packs img {
+    max-width: 200px;
+}
+.color {
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--dark-color);
+}
+.pack-variation {
+    gap: 70px;
+    font-size: 24px;
+}
+.pack-75-text {
+    font-size: 18px;
+    display: inline-block;
+    position: absolute;
+    top: -35px;
+    right: 65px;
+}
+.pack-75-box {
+    width: 60%;
+}
+.pack-21-box {
+    width: 60%;
+}
+.pack-upper-textbox {
+    margin-top: 25px;
+}
+.pack-upper-textbox img {
+    width: 210px;
+    margin-top: -65px;
+    display: inline-block;
+    margin-left: 50px;
+}
+.border-img {
+    bottom: -5px;
+}
+.second-slide-textbox {
+    max-width: 450px;
 }
 
 /* Footer */

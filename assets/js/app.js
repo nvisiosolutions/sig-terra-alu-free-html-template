@@ -2,7 +2,7 @@ const slides = document.querySelectorAll(".page");
 const allPage = document.getElementById('all-page')
 const currentPage = document.getElementById('current-page')
 // current slide counter
-let curSlide = 0;
+let curSlide = 1;
 // maximum number of slides
 let maxSlide = slides.length - 1;
 // select next slide button
@@ -28,6 +28,10 @@ nextSlide.addEventListener("click", function () {
     }
 
     currentPage.innerHTML = curSlide + 1
+
+    if (curSlide + 1 === 4) {
+        nextSlide.disabled = true;
+    }
 
     slides.forEach((slide, indx) => {
         slide.style.transform = `translateY(${100 * (indx - curSlide)}%)`;
