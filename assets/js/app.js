@@ -2,7 +2,7 @@ const slides = document.querySelectorAll(".page");
 const allPage = document.getElementById('all-page')
 const currentPage = document.getElementById('current-page')
 // current slide counter
-let curSlide = 2;
+let curSlide = 0;
 // maximum number of slides
 let maxSlide = slides.length - 1;
 // select next slide button
