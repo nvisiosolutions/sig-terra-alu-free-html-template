@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'ppsigflow';
+    src: url('../fonts/PPSIGFlow-Regular.woff2') format('woff2'),
+        /* url('../fonts/PPSIGFlow-Bold.woff2') format('woff2'), */
+        /* url('../fonts/PPSIGFlow-SemiBold.woff2') format('woff2'), */
+
+        /* url('../fonts/PPSIGFlow-Bold.woff') format('woff'), */
+        url('../fonts/PPSIGFlow-Regular.woff') format('woff'),
+        /* url('../fonts/PPSIGFlow-SemiBold.woff') format('woff'), */
+
+        /* url('../fonts/PPSIGFlow-Bold.ttf')  format('truetype'), */
+        url('../fonts/PPSIGFlow-Regular.ttf')  format('truetype');
+        /*url('../fonts/PPSIGFlow-SemiBold.ttf')  format('truetype'); */
+}
+
+/* Typography */
+:root {
+    --primary: #145EFC;
+    --dark-color: #040404;
+    --primary-font: 'ppsigflow';
+}
+body {
+    font-family: var(--primary-font);
+    position: relative;
+}
+
+.color-primary {
+    color: var(--primary);
+}
+.color-dark {
+    color: var(--dark-color);
+}
+.primary-border {
+    border-color: var(--primary);
+}
+.fs-xsm {
+    font-size: 14px;
+    line-height: 20px;
+}
+.fs-md {
+    font-size: 28px;
+    line-height: 38px;
+}
+.fs-lg {
+    font-size: 32px;
+    line-height: normal;
+}
+.fs-xxl {
+    font-size: 72px;
+    line-height: 80px;
+}
+
+.pager {
+    z-index: 1;
+}
+#paged {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.page {
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
+    position: absolute;
+}
+
+.page:nth-child(1) {
+    background-color: #F2EFEB;
+}
+
+/* First Page */
+.pack {
+    margin-left: -285px;
+}
+
+/* Footer */
+footer {
+    z-index: 1;
+}
+.logo {
+    max-width: 100px;
+}
+.navigation button {
+    width: 40px;
+    height: 40px;
+    outline: none;
+}
+.navigation button:hover, 
+.navigation button:active {
+    border: 3px solid var(--primary);
+}
