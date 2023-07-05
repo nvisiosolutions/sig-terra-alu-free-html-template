@@ -140,4 +140,9 @@ footer {
 .navigation button:hover, 
 .navigation button:active {
     border: 3px solid var(--primary);
+    opacity: 1;
+}
+.btn:disabled, .btn.disabled, fieldset:disabled .btn {
+    border: 3px solid var(--primary);
+    opacity: .2;
 }
