@@ -142,7 +142,7 @@
     }
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 400px) {
     .fs-xxl-m {
         font-size: 1rem;
         line-height: normal;
@@ -177,5 +177,9 @@
     .fs-xxl-mx {
         font-size: .65rem;
         line-height: normal;
+    }
+    .pack-21-box img,
+    .pack-75-box img {
+        width: 70px;
     }
 }
