@@ -98,3 +98,5 @@ function handleDisabledButton() {
 window.addEventListener('touchstart', handleTouchStart);
 window.addEventListener('touchend', handleTouchMove);
 window.addEventListener('wheel', handleScroll);
+
+alert(window.innerWidth)
