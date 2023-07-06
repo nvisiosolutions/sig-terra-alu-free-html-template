@@ -6,6 +6,7 @@ const sections = document.getElementsByClassName('page');
 
 const prevButton = document.getElementById('prev');
 const nextButton = document.getElementById('next');
+let touchStartY;
 
 // Initialize Current page and total page
 const currentSection = currentSectionIndex + 1;
@@ -47,6 +48,20 @@ function showPrevious() {
     handleDisabledButton()
 }
 
+function handleTouchStart(event) {
+    touchStartY = event.touches[0].clientY;
+}
+
+function handleTouchMove(event) {
+    const touchEndY = event.touches[0].clientY;
+    const touchDiff = touchEndY - touchStartY;
+    if (touchDiff > 0) {
+        showPrevious();
+    } else if (touchDiff < 0) {
+        showNext();
+    }
+}
+
 function updateSectionInfo() {
     const currentSection = currentSectionIndex + 1;
     const totalSections = sections.length;
@@ -80,5 +95,6 @@ function handleDisabledButton() {
     }
 }
 
-window.addEventListener('scroll', handleScroll);
+window.addEventListener('touchstart', handleTouchStart);
+window.addEventListener('touchmove', handleTouchMove);
 window.addEventListener('wheel', handleScroll);
