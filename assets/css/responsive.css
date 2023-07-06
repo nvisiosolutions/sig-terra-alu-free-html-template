@@ -1,9 +1,9 @@
 @media screen and (max-width: 768px) {
     .pack img.all-pack {
-        max-width: 50%;
-        margin-left: 50%;
+        max-width: 80%;
         position: relative;
         z-index: 10;
+        margin-left: 5.5rem;
     }
     .cap-top-shape {
         width: 4.25rem !important;
