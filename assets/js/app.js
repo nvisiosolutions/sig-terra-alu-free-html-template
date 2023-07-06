@@ -50,14 +50,14 @@ function showPrevious() {
 
 function handleTouchStart(event) {
     touchStartY = event.touches[0].clientY;
-}
+  }
 
 function handleTouchMove(event) {
-    const touchEndY = event.touches[0].clientY;
+    const touchEndY = event.changedTouches[0].clientY
     const touchDiff = touchEndY - touchStartY;
-    if (touchDiff > 0) {
+    if (touchDiff > 0 && touchDiff > 50) {
         showPrevious();
-    } else if (touchDiff < 0) {
+    } else if (touchDiff < 0 && Math.abs(touchDiff) > 50) {
         showNext();
     }
 }
@@ -96,5 +96,5 @@ function handleDisabledButton() {
 }
 
 window.addEventListener('touchstart', handleTouchStart);
-window.addEventListener('touchmove', handleTouchMove);
+window.addEventListener('touchend', handleTouchMove);
 window.addEventListener('wheel', handleScroll);
