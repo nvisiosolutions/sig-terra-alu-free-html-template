@@ -1,106 +1,108 @@
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 768px) {
     .fs-md {
-        font-size: 13px;
-        line-height: 18px;
+        font-size: 0.813rem;
+        line-height: 1.125rem;
     }
     .fs-lg {
-        font-size: 13px;
+        font-size: 0.813rem;
         line-height: normal;
     }
     .fs-xl {
-        font-size: 16px;
-    }
-    .fs-xl-m {
-        font-size: 16px;
+        font-size: 1rem;
     }
     .fs-xxl {
-        font-size: 32px;
-        line-height: 40px;
+        font-size: 2rem;
+        line-height: 2.5rem;
     }
     .fs-xxl-m {
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 1.5rem;
+        line-height: 2rem;
     }
     .fs-xxl-mx {
-        font-size: 18px;
-        line-height: 26px;
+        font-size: 1.125rem;
+        line-height: 1.625rem;
     }
     .w-45 {
-        width: 30px;
+        width: 1.875rem;
     }
     .h-40 {
-        height: 24px;
+        height: 1.5rem;
     }
     .list-arrow-ico {
-        width: 20px;
+        width: 1.25rem;
     }
     .pack {
         margin-left: 0;
     }
     .pack img {
         max-width: 100%;
-        margin-left: 30px;
+        margin-left: 1.875rem;
         position: relative;
         z-index: 10;
     }
+    .cap-top-shape {
+        width: 2rem !important;
+        top: -.7rem;
+        right: 37%;
+    }
     .logo {
-        max-width: 50px;
-        top: 10px !important;
+        max-width: 3.125rem;
+        top: 0.625rem !important;
     }
     .pack-75-text, .pack-21-text {
-        font-size: 9px;
-        top: -20px;
+        font-size: 0.563rem;
+        top: -1.25rem;
     }
     .pack-upper-textbox img {
-        width: 120px;
-        margin-top: -50px;
+        width: 7.5rem;
+        margin-top: -3.125rem;
         display: inline-block;
-        margin-left: -15px;
+        margin-left: -0.938rem;
     }
     .pack-variation {
-        gap: 16px;
-        font-size: 11px;
-        max-width: 77px;
+        gap: 1rem;
+        font-size: 0.688rem;
+        max-width: 4.813rem;
     }
     .color {
-        width: 20px;
-        height: 20px;
+        width: 1.25rem;
+        height: 1.25rem;
     }
     .mini-text-box {
-        width: 140px;
-        font-size: 11px;
-        line-height: 16px;
+        width: 8.75rem;
+        font-size: 0.688rem;
+        line-height: 1rem;
         text-align: right;
         margin-left: auto;
     }
     .fs-normal {
-        font-size: 11px;
-        line-height: 16px;
+        font-size: 0.688rem;
+        line-height: 1rem;
     }
     .infograph-heading {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
     .vertical-border-img {
-        max-height: 250px;
+        max-height: 15.625rem;
     }
     .third-page-icon1 {
         top: 33%;
-        left: -220px;
-        width: 295px;
+        left: -13.75rem;
+        width: 18.438rem;
     }
     .third-page-icon2 {
-        bottom: -25px;
-        right: -75px;
-        max-width: 158px;
+        bottom: -1.563rem;
+        right: -4.688rem;
+        max-width: 9.875rem;
     }
     .right-arrow-lg {
-        max-width: 175px;
-        top: 100px !important;
+        max-width: 10.938rem;
+        top: 6.25rem !important;
     }
     .line-shape {
-        max-width: 100px;
+        max-width: 6.25rem;
     }
     .logo-alt {
-        max-width: 150px;
+        max-width: 9.375rem;
     }
 }

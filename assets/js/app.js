@@ -1,78 +1,83 @@
-// Temp
-
-console.log(window.innerHeight)
-
-// Temp
-
-
-const slides = document.querySelectorAll(".page");
-const allPage = document.getElementById('all-page')
 const currentPage = document.getElementById('current-page')
-// current slide counter
-let curSlide = 0;
-// maximum number of slides
-let maxSlide = slides.length - 1;
-// select next slide button
-const nextSlide = document.querySelector("#next");
-// select prev slide button
-const prevSlide = document.querySelector("#prev");
+const allPage = document.getElementById('all-page')
 
-// Set all page number
-allPage.innerHTML = slides.length
-// Set current page number
-currentPage.innerHTML = curSlide + 1
+let currentSectionIndex = 0;
+const sections = document.getElementsByClassName('page');
 
-slides.forEach((slide, indx) => {
-    slide.style.transform = `translateY(${100 * (indx - curSlide)}%)`;
-});
+const prevButton = document.getElementById('prev');
+const nextButton = document.getElementById('next');
 
-prevSlide.disabled = true
-nextSlide.disabled = false
+// Initialize Current page and total page
+const currentSection = currentSectionIndex + 1;
+const totalSections = sections.length;
 
-// add event listener and next slide functionality
-nextSlide.addEventListener("click", function () {
-    if (curSlide === maxSlide) {
-        curSlide = 0;
-    } else {
-        curSlide++;
+currentPage.innerHTML = currentSection
+allPage.innerHTML = totalSections
+
+prevButton.disabled = true
+nextButton.disabled = false
+
+function showSection(index) {
+    if (index >= 0 && index < sections.length) {
+        const currentSection = sections[currentSectionIndex];
+        const nextSection = sections[index];
+
+        if (index > currentSectionIndex) {
+            // Show next section
+            currentSection.style.transform = `translateY(-100%)`;
+            nextSection.style.transform = `translateY(0)`;
+        } else {
+            // Show previous section
+            currentSection.style.transform = `translateY(100%)`;
+            nextSection.style.transform = `translateY(0)`;
+        }
+
+        currentSectionIndex = index;
+        updateSectionInfo()
+    }
+}
+
+function showNext() {
+    showSection(currentSectionIndex + 1);
+    handleDisabledButton()
+}
+
+function showPrevious() {
+    showSection(currentSectionIndex - 1);
+    handleDisabledButton()
+}
+
+function updateSectionInfo() {
+    const currentSection = currentSectionIndex + 1;
+    const totalSections = sections.length;
+
+    currentPage.innerHTML = currentSection
+    allPage.innerHTML = totalSections
+}
+
+function handleScroll(event) {
+    const delta = Math.sign(event.deltaY);
+
+    if (delta > 0) {
+        showNext();
+    } else if (delta < 0) {
+        showPrevious();
     }
 
-    currentPage.innerHTML = curSlide + 1
-    
-    prevSlide.disabled = false
-    if (curSlide + 1 === 4) {
-        nextSlide.disabled = true
+    handleDisabledButton()
+}
+
+function handleDisabledButton() {
+    if (currentSectionIndex === 0) {
+        prevButton.disabled = true
+        nextButton.disabled = false
+    } else if (currentSectionIndex === sections.length - 1) {
+        prevButton.disabled = false
+        nextButton.disabled = true
     } else {
-        nextSlide.disabled = false;
+        prevButton.disabled = false
+        nextButton.disabled = false
     }
+}
 
-    slides.forEach((slide, indx) => {
-        slide.style.transform = `translateY(${100 * (indx - curSlide)}%)`;
-        slide.style.transition = `all 0.5s`;
-    });
-});
-
-// add event listener and navigation functionality
-prevSlide.addEventListener("click", function () {
-    // check if current slide is the first and reset current slide to last
-    if (curSlide === 0) {
-        curSlide = maxSlide;
-    } else {
-        curSlide--;
-    }
-
-    currentPage.innerHTML = curSlide + 1
-
-    nextSlide.disabled = false
-    if (curSlide + 1 === 1) {
-        prevSlide.disabled = true;
-    } else {
-        prevSlide.disabled = false;
-    }
-  
-    //   move slide by 100%
-    slides.forEach((slide, indx) => {
-        slide.style.transform = `translateY(${100 * (indx - curSlide)}%)`;
-        slide.style.transition = `all 0.5s`;
-    });
-});
+window.addEventListener('wheel', handleScroll);

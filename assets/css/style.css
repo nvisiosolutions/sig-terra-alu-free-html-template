@@ -20,7 +20,6 @@
     --page-bg: #F2EFEB;
     --primary-font: 'ppsigflow';
 }
-
 body {
     font-family: var(--primary-font);
     position: relative;
@@ -37,33 +36,33 @@ body {
     border-color: var(--primary);
 }
 .fs-xsm {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
 }
 .fs-normal {
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 24px;
 }
 .fs-md {
     font-size: 24px;
-    line-height: 32px;
+    line-height: 1.5rem;
 }
 .fs-lg {
-    font-size: 28px;
+    font-size: 1.75rem;
     line-height: normal;
 }
 .fs-xl {
-    font-size: 32px;
+    font-size: 2rem;
 }
 .fs-xxl {
-    font-size: 56px;
-    line-height: 72px;
+    font-size: 3.5rem;
+    line-height: 4.5rem;
 }
 .w-45 {
-    width: 45px;
+    width: 2.813rem;
 }
 .h-40 {
-    height: 40px;
+    height: 2.5rem;
 }
 
 .pager {
@@ -72,46 +71,63 @@ body {
 #paged {
     width: 100%;
     position: relative;
+    height: 100vh;
+    overflow: hidden;
 }
 .page {
     width: 100%;
     height: 100vh;
-    padding: 30px;
+    padding: 1.875rem;
     position: absolute;
+    transition: opacity 0.5s ease;
 }
 
 .page {
     background-color: var(--page-bg);
     overflow: hidden;
+    transition: .5s all ease-in-out;
+}
+.page:nth-child(1) {
+    transform: translateY(0);
+}
+.page:nth-child(2),
+.page:nth-child(3),
+.page:nth-child(4) {
+    transform: translateY(100%);
 }
 
 /* First Page */
 .pack {
-    margin-left: -230px;
+    margin-left: -14.375rem;
 }
 .pack img {
-    max-width: 800px;
+    width: 100%;
+}
+.cap-top-shape {
+    width: 6.25rem !important;
+    top: -3.5rem;
+    right: 45%;
 }
 
 /* Second page */
 .second-page-packs img {
-    max-width: 200px;
+    max-width: 12.5rem;
 }
 .color {
-    width: 30px;
-    height: 30px;
+    width: 1.875rem;
+    height: 1.875rem;
     border: 1px solid var(--dark-color);
 }
 .pack-variation {
-    gap: 70px;
-    font-size: 24px;
+    gap: 4.375rem;
+    font-size: 1.5rem;
 }
 .pack-75-text {
-    font-size: 18px;
+    font-size: 1.125rem;
     display: inline-block;
     position: absolute;
-    top: -35px;
-    right: 65px;
+    top: -2.188rem;
+    right: 4.063rem;
 }
 .pack-75-box {
     width: 60%;
@@ -120,19 +136,16 @@ body {
     width: 60%;
 }
 .pack-upper-textbox {
-    margin-top: 25px;
+    margin-top: 1.563rem;
 }
 .pack-upper-textbox img {
-    width: 210px;
-    margin-top: -65px;
+    width: 13.125rem;
+    margin-top: -4.063rem;
     display: inline-block;
-    margin-left: 50px;
+    margin-left: 3.125rem;
 }
 .border-img {
     bottom: -5px;
-}
-.second-slide-textbox {
-    max-width: 450px;
 }
 .mini-text-box {
     text-align: center;
@@ -141,7 +154,7 @@ body {
 
 /* Third Slid */
 .vertical-border-img {
-    max-height: 450px;
+    max-height: 28.125rem;
 }
 .info-grid {
     display: grid;
@@ -149,24 +162,24 @@ body {
 }
 .third-page-icon1 {
     position: absolute;
-    top: 100px;
-    left: -220px;
+    top: 6.25rem;
+    left: -13.75rem;
 }
 .third-page-icon2 {
     position: absolute;
-    bottom: 200px;
-    right: -180px;
+    bottom: 12.5rem;
+    right: -11.25rem;
 }
 
 /* Fourth Page */
 .logo-alt {
-    max-width: 300px;
+    max-width: 18.75rem;
 }
 .right-arrow-lg {
-    max-width: 500px;
+    max-width: 31.25rem;
 }
 .line-shape {
-    max-width: 300px;
+    max-width: 18.75rem;
 }
 
 /* Footer */
@@ -174,11 +187,11 @@ footer {
     z-index: 10;
 }
 .logo {
-    max-width: 100px;
+    max-width: 6.25rem;
 }
 .navigation button {
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     outline: none;
 }
 .navigation button:hover, 
