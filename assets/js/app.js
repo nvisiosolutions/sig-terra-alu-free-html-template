@@ -1,3 +1,10 @@
+// Temp
+
+console.log(window.innerHeight)
+
+// Temp
+
+
 const slides = document.querySelectorAll(".page");
 const allPage = document.getElementById('all-page')
 const currentPage = document.getElementById('current-page')
