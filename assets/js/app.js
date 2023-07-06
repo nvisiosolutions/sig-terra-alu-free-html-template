@@ -80,4 +80,5 @@ function handleDisabledButton() {
     }
 }
 
+window.addEventListener('scroll', handleScroll);
 window.addEventListener('wheel', handleScroll);
