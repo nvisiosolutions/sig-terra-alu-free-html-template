@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
-    <header class="pager d-flex justify-content-center position-absolute top-0 w-100 pt-4">
+    <header class="pager d-flex justify-content-center position-fixed top-0 w-100 pt-4">
         <div class="fs-xsm fw-normal text-center">
             <span>
                 <span id="current-page">
@@ -26,7 +26,7 @@
 
     <main id="paged">
         <!-- 1st Page -->
-        <section class="page d-flex justify-content-center flex-column">
+        <section id="first-page" class="page d-flex justify-content-center flex-column">
             <div class="container">
                 <div class="row align-items-start flex-column flex-md-row-reverse mt-5">
                     <div class="col-md-6">
@@ -60,7 +60,7 @@
                     </div>
 
                     <div class="col-md-6">
-                        <div class="pack overflow-hidden">
+                        <div class="pack">
                             <img src="assets/img/Pack all.png" class="img-fluid mt-2 mt-md-0" alt="">
                         </div>
                     </div>
@@ -69,7 +69,7 @@
         </section>
 
         <!-- 2nd Page -->
-        <section class="page d-flex justify-content-center flex-column">
+        <section id="second-page" class="page d-flex justify-content-center flex-column">
             <div class="container">    
                 <div class="row align-items-center">
                     <div class="col-md-6">
@@ -141,7 +141,7 @@
         </section>
 
         <!-- Third Page -->
-        <section class="page d-flex justify-content-center pb-5 flex-column">
+        <section id="third-page" class="page d-flex justify-content-center pb-5 flex-column">
             <img src="assets/icons/SIG_Scribbles_RGB_Sky-27 2.png" class="third-page-icon1" alt="">
             <div class="container pb-5">
                 <h1 class="fs-xxl fs-xxl-mx fw-bold">
@@ -227,7 +227,7 @@
         </section>
 
         <!-- Fourth Page -->
-        <section class="page d-flex justify-content-center pb-5 flex-column position-relative">
+        <section id="fourth-page" class="page d-flex justify-content-center pb-5 flex-column position-relative">
             <img src="assets/icons/right-arrow-lg.png" class="right-arrow-lg position-absolute start-0 top-0" alt="">
             <img src="assets/icons/line-shape.png" class="line-shape position-absolute top-0 end-0" alt="">
             <img src="assets/icons/world-shape.png" class="line-shape position-absolute bottom-0 end-0" alt="">
@@ -252,7 +252,7 @@
         </section>
     </main>
 
-    <footer class="position-absolute bottom-0 w-100">
+    <footer class="position-fixed bottom-0 w-100">
         <section class="container py-3 py-md-5">
             <img src="assets/img/SIG_Logo_Tagline_RGB_Blue_Black_Spark.svg" class="logo position-absolute top-0" alt="">
             <div class="row">
