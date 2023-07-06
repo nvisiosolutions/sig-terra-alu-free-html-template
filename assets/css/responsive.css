@@ -1,3 +1,38 @@
+@media screen and (min-width: 769px) and (max-width: 991px) {
+    .pack img.all-pack {
+        max-width: 50%;
+        margin-left: 50%;
+        position: relative;
+        z-index: 10;
+    }
+    .cap-top-shape {
+        width: 4.25rem !important;
+        top: -3rem;
+        right: 23%;
+    }
+    .fs-xxl {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .pack-75-box {
+        width: 40%;
+    }
+    .pack-21-box {
+        width: 30%;
+    }
+    .pack-75-text {
+        top: -1rem;
+    }
+    .pack-upper-textbox img {
+        margin-top: -2.063rem;
+    }
+    .third-page-icon1 {
+        left: -15rem;
+    }
+    .right-arrow-lg {
+        max-width: 15.25rem;
+    }
+}
 @media screen and (max-width: 768px) {
     .fs-md {
         font-size: 0.813rem;
