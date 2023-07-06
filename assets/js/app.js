@@ -55,9 +55,9 @@ function handleTouchStart(event) {
 function handleTouchMove(event) {
     const touchEndY = event.touches[0].clientY;
     const touchDiff = touchEndY - touchStartY;
-    if (touchDiff > 0) {
+    if (touchDiff > 100) {
         showPrevious();
-    } else if (touchDiff < 0) {
+    } else if (touchDiff < 100) {
         showNext();
     }
 }
