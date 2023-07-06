@@ -142,7 +142,7 @@
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 375px) {
     .fs-xxl-m {
         font-size: 1rem;
         line-height: normal;
