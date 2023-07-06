@@ -141,3 +141,41 @@
         max-width: 9.375rem;
     }
 }
+
+@media screen and (max-width: 340px) {
+    .fs-xxl-m {
+        font-size: 1rem;
+        line-height: normal;
+    }
+    .pack-75-text, .pack-21-text {
+        font-size: 0.4rem;
+        top: -1.25rem;
+    }
+    .fs-lg {
+        font-size: 0.6rem;
+    }
+    .fs-xl {
+        font-size: .7rem;
+    }
+    .mini-text-box {
+        font-size: 0.5rem;
+        line-height: normal;
+    }
+    .infograph-heading {
+        font-size: 0.575rem;
+    }
+    .w-45 {
+        width: 1.4rem;
+    }
+    .h-40 {
+        height: 1.2rem;
+    }
+    .fs-normal {
+        font-size: 0.6rem;
+        line-height: normal;
+    }
+    .fs-xxl-mx {
+        font-size: .65rem;
+        line-height: normal;
+    }
+}
