@@ -10,7 +10,11 @@
 
         url('../fonts/PPSIGFlow-Bold.ttf')  format('truetype'),
         url('../fonts/PPSIGFlow-Regular.ttf')  format('truetype'),
-        url('../fonts/PPSIGFlow-SemiBold.ttf')  format('truetype');
+        url('../fonts/PPSIGFlow-SemiBold.ttf')  format('truetype'),
+
+        url('../fonts/PPSIGFlow-Bold.svg')  format('svg'),
+        url('../fonts/PPSIGFlow-Regular.svg')  format('svg');
+        /* url('../fonts/PPSIGFlow-SemiBold.ttf')  format('svg'); */
 }
 
 /* Typography */
