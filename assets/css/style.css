@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'ppsigflow';
     src: url('../fonts/PPSIGFlow-Regular.woff2') format('woff2'),
-        /* url('../fonts/PPSIGFlow-Bold.woff2') format('woff2'), */
-        /* url('../fonts/PPSIGFlow-SemiBold.woff2') format('woff2'), */
+        url('../fonts/PPSIGFlow-Bold.woff2') format('woff2'),
+        url('../fonts/PPSIGFlow-SemiBold.woff2') format('woff2'),
 
-        /* url('../fonts/PPSIGFlow-Bold.woff') format('woff'), */
+        url('../fonts/PPSIGFlow-Bold.woff') format('woff'),
         url('../fonts/PPSIGFlow-Regular.woff') format('woff'),
-        /* url('../fonts/PPSIGFlow-SemiBold.woff') format('woff'), */
+        url('../fonts/PPSIGFlow-SemiBold.woff') format('woff'),
 
-        /* url('../fonts/PPSIGFlow-Bold.ttf')  format('truetype'), */
-        url('../fonts/PPSIGFlow-Regular.ttf')  format('truetype');
-        /*url('../fonts/PPSIGFlow-SemiBold.ttf')  format('truetype'); */
+        url('../fonts/PPSIGFlow-Bold.ttf')  format('truetype'),
+        url('../fonts/PPSIGFlow-Regular.ttf')  format('truetype'),
+        url('../fonts/PPSIGFlow-SemiBold.ttf')  format('truetype');
 }
 
 /* Typography */
