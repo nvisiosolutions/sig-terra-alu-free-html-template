@@ -186,6 +186,9 @@ body {
 footer {
     z-index: 10;
 }
+#prev, #next {
+    background-color: white;
+}
 .logo {
     max-width: 6.25rem;
 }
