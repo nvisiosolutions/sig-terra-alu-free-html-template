@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
-    <header class="pager d-flex justify-content-center position-fixed top-0 w-100 pt-4">
+    <header class="pager d-flex justify-content-center position-fixed top-0 w-100 pt-4 d-none">
         <div class="fs-xsm fw-normal text-center">
             <span>
                 <span id="current-page">
@@ -28,20 +28,20 @@
         <!-- 1st Page -->
         <section id="first-page" class="page d-flex justify-content-center flex-column">
             <div class="container">
-                <div class="row align-items-start flex-column flex-md-row-reverse">
+                <div class="align-items-center flex-column flex-md-row-reverse justify-content-center row">
                     <div class="col-lg-6">
                         <h1 class="fs-xxl color-primary fw-bold position-relative">
                             <span class="position-relative">
                                 SIG Terra<br />Alu-free
-
-                                <img src="assets/icons/border.png" class="position-absolute start-0 w-100 border-img" alt="">
+        
+                                <img src="assets/icons/border.png" class="position-absolute start-0 w-100 title-border-img" alt="">
                             </span>
                         </h1>
-
+        
                         <p class="fs-lg color-dark mt-4">
-                            La prima confezione per il latte <br /><span class="color-primary fw-bold">senza alluminio!</span>
+                            La prima confezione per il latte <br /><span class="color-primary fw-bold">senza alluminio</span>!
                         </p>
-
+        
                         <ul class="list-unstyled fs-md mt-3 d-flex flex-column gap-1 gap-md-3">
                             <li class="d-flex align-items-start gap-3">
                                 <img src="assets/icons/right-arrow.svg" class="mt-1 mt-md-2 list-arrow-ico" alt="">
@@ -65,10 +65,9 @@
                             </li>
                         </ul>
                     </div>
-
+        
                     <div class="col-lg-6">
-                        <div class="pack mt-3 mt-md-5 mt-xl-0 position-relative">
-                            <!-- <img src="assets/icons/cap-top-shape.svg" class="cap-top-shape position-absolute" alt=""> -->
+                        <div class="pack mt-0 mt-md-5 mt-xl-0 position-relative">
                             <img src="assets/img/alt-pack-all.png" class="img-fluid mt-2 mt-md-0 all-pack" alt="">
                         </div>
                     </div>
@@ -77,69 +76,28 @@
         </section>
 
         <!-- 2nd Page -->
-        <section id="second-page" class="page d-flex justify-content-md-center flex-column">
-            <div class="container pt-5">
+        <section id="second-page" class="page d-flex justify-content-center flex-column">
+            <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
-                        <h1 class="fs-xxl fs-xxl-m fw-bold">
-                            Ma cosa significa <span class="color-primary">rimuovere l’alluminio</span> da una confezione in cartone?
+                        <h1 class="page-title fw-bold">
+                            Ma cosa significa <br><span class="color-primary">rimuovere l’alluminio</span><br> da una confezione in <br>cartone?
                         </h1>
                         <p class="fs-lg mt-3 mt-md-5">
                             <span>Il 5% di alluminio rappresenta il</span><br>
                             <span class="fs-xl color-primary fw-bold position-relative">
                                 0% delle emissioni di CO<sub>2</sub>*
-
+        
                                 <img src="assets/icons/border.png" class="position-absolute start-0 w-100 border-img" alt="">
                             </span>
                         </p>
                     </div>
-
+        
                     <div class="col-lg-6">
-                        <div class="position-relative pack-upper-textbox">
-                            <div class="text-center">
-                                <img src="assets/icons/right-arrow-alt.svg" class="img-fluid" alt="">
-                            </div>
-
-                            <div class="row g-5">
-                                <div class="col-6 position-relative">
-                                    <p class="pack-75-text">
-                                        <span class="fw-semibold">Composizione</span> di una <br>confezione in cartone
-                                    </p>
-                                </div>
-    
-                                <div class="col-6 position-relative">
-                                    <p class="pack-21-text text-center">
-                                        <span class="fw-semibold">Impatto</span> in <br>emissioni di CO<sub>2</sub>
-                                    </p>
-                                </div>
-                            </div>
+                        <div class="text-center">
+                            <img src="assets/img/second-page-pack-infograph.png" class="pack-infography img-fluid" alt="">
                         </div>
-
-                        <div class="d-flex justify-content-between align-items-center gap-4 gap-md-5 2nd-page-packs">
-                            <div class="position-relative pack-75-box">
-                                <img src="assets/img/Pack 1 Data.svg" class="img-fluid" alt="">
-                            </div>
-
-                            <div class="d-flex align-items-center flex-column pack-variation">
-                                <div class="d-flex align-items-center w-100 gap-2">
-                                    <span class="color rounded-1"></span>
-                                    <span>Carta</span>
-                                </div>
-                                <div class="d-flex align-items-center w-100 gap-2">
-                                    <span class="color rounded-1" style="background-color: #DCA0FF;"></span>
-                                    <span>Polimeri</span>
-                                </div>
-                                <div class="d-flex align-items-center w-100 gap-2">
-                                    <span class="color rounded-1" style="background-color: #145EFC;"></span>
-                                    <span>Alluminio</span>
-                                </div>
-                            </div>
-                            
-                            <div class="pack-21-box">
-                                <img src="assets/img/Pack 2 Data.svg" class="img-fluid" alt="">
-                            </div>
-                        </div>
-
+        
                         <p class="fs-xsm fw-bold mt-4 mini-text-box">
                             *percentuale relativa alle sole materie prime della confezione
                         </p>
@@ -149,12 +107,12 @@
         </section>
 
         <!-- Third Page -->
-        <section id="third-page" class="page d-flex  justify-content-md-center pt-5 flex-column">
+        <section id="third-page" class="page d-flex justify-content-center flex-column position-relative">
             <img src="assets/icons/SIG_Scribbles_RGB_Sky-27 2.png" class="third-page-icon1" alt="">
-            <div class="container pt-4">
-                <h1 class="fs-xxl fs-xxl-mx fw-bold">
-                    Cosa ti permette di comunicare
-
+            <div class="container">
+                <h1 class="page-title fw-bold">
+                    Cosa ti permette di comunicare<br>
+        
                     <span class="position-relative color-primary fw-bold d-inline-block">
                         SIG Terra Alu-free?
                         <img src="assets/icons/border.png" class="position-absolute start-0 w-100 border-img" alt="">
@@ -169,12 +127,12 @@
                                     Riduzione CO<sub>2</sub>
                                 </h6>
                             </div>
-
-                            <p class="mt-2 mb-0">
+        
+                            <p class="mt-1 mb-0">
                                 Questa confezione aiuta a ridurre le emissioni di CO<sub>2</sub>
                             </p>
                         </div>
-
+        
                         <div class="card border-2 border-md-4 primary-border p-2 p-md-4 mt-2 mt-md-5">
                             <div class="d-flex align-items-start gap-2 gap-md-4">
                                 <img src="assets/icons/leaves.png" class="h-40" alt="">
@@ -182,12 +140,12 @@
                                     Materiali rinnovabili
                                 </h6>
                             </div>
-
-                            <p class="mt-2 mb-0">
+        
+                            <p class="mt-1 mb-0">
                                 Questa confezione è legata per il 100% a materie prime rinnovabili (bilanciamento di massa)
                             </p>
                         </div>
-
+        
                         <div class="card border-2 border-md-4 primary-border p-2 p-md-4 mt-2 mt-md-5">
                             <div class="d-flex align-items-start gap-2 gap-md-4">
                                 <img src="assets/icons/fan.svg" class="h-40" alt="">
@@ -195,17 +153,17 @@
                                     Energia rinnovabile
                                 </h6>
                             </div>
-
-                            <p class="mt-2 mb-0">
+        
+                            <p class="mt-1 mb-0">
                                 Questa confezione è realizzata con il 100% di energia rinnovabile
                             </p>
                         </div>
                     </div>
-
+        
                     <div class="col text-center">
                         <img src="assets/icons/border-vertical.png" class="vertical-border-img" alt="">
                     </div>
-
+        
                     <div class="col position-relative" style="grid-column: span 5 / span 11;">
                         <div class="card border-2 border-md-4 primary-border p-2 p-md-4">
                             <div class="d-flex align-items-start gap-2 gap-md-4">
@@ -214,12 +172,12 @@
                                     Alu-free
                                 </h6>
                             </div>
-
-                            <p class="mt-2 mb-0">
+        
+                            <p class="mt-1 mb-0">
                                 Questa confezione è senza strato di alluminio
                             </p>
                         </div>
-
+        
                         <div class="card border-2 border-md-4 primary-border p-2 p-md-4 mt-2 mt-md-5">
                             <div class="d-flex align-items-start gap-2 gap-md-4">
                                 <img src="assets/icons/fsc.svg" class="h-40" alt="">
@@ -227,8 +185,8 @@
                                     FSC<sup>®</sup>
                                 </h6>
                             </div>
-
-                            <p class="mt-2 mb-0">
+        
+                            <p class="mt-1 mb-0">
                                 La carta di questa confezione è certificata FSC® e proviene da foreste gestite in maniera responsabile e da altre fonti controllate
                             </p>
                         </div>
@@ -243,16 +201,16 @@
             <img src="assets/icons/right-arrow-lg.png" class="right-arrow-lg position-absolute start-0 top-0" alt="">
             <img src="assets/icons/line-shape.png" class="line-shape position-absolute top-0 end-0" alt="">
             <img src="assets/icons/world-shape.png" class="line-shape position-absolute bottom-0 end-0" alt="">
-
+        
             <div class="container">    
                 <div class="row align-items-center">
                     <div class="col text-center">
                         <img src="assets/img/SIG_Logo_Tagline_RGB_Blue_Black_Spark.svg" class="logo-alt" alt="">
-
+        
                         <h3 class="fs-xl fs-xl-m mt-4">
                             Vuoi avere tutte le informazioni a<br>portata di mano?
                         </h3>
-                        <a href="https://sig-e-tu-non-lo-vuoi-senza-alluminio.info/SIGbrochure(Preview).pdf" class="mt-5 text-decoration-none">
+                        <a id="download-pdf" href="https://sig-e-tu-non-lo-vuoi-senza-alluminio.info/?sdm_process_download=1&download_id=17" class="mt-5 text-decoration-none">
                             <span class="fs-xl fs-xl-m color-primary fw-bold position-relative">
                                 Scarica qui la brochure
                                 <img src="assets/icons/border.png" class="position-absolute start-0 w-100 border-img" alt="">
@@ -264,7 +222,7 @@
         </section>
     </main>
 
-    <footer class="position-fixed bottom-0 w-100">
+    <footer class="position-fixed bottom-0 w-100 d-none">
         <section class="container py-3 py-md-5">
             <img src="assets/img/SIG_Logo_Tagline_RGB_Blue_Black_Spark.svg" class="logo position-absolute top-0" alt="">
             <div class="row">

@@ -1,9 +1,9 @@
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 769px) and (max-width: 991px) {
     .pack img.all-pack {
-        max-width: 80%;
+        max-width: 50%;
+        margin-left: 50%;
         position: relative;
         z-index: 10;
-        margin-left: 5.5rem;
     }
     .cap-top-shape {
         width: 4.25rem !important;
@@ -33,29 +33,29 @@
         max-width: 15.25rem;
     }
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 768px) {
     .fs-md {
-        font-size: 0.813rem;
-        line-height: 1.125rem;
+        font-size: 1.125rem;
+        line-height: 1.5rem;
     }
     .fs-lg {
-        font-size: 0.813rem;
+        font-size: 1.125rem;
         line-height: normal;
     }
     .fs-xl {
         font-size: 1rem;
     }
     .fs-xxl {
-        font-size: 2rem;
-        line-height: 2.5rem;
+        font-size: 3rem;
+        line-height: 3.4rem;
     }
     .fs-xxl-m {
-        font-size: 1.5rem;
-        line-height: 2rem;
+        font-size: 1.875rem;
+        line-height: 2.5rem;
     }
     .fs-xxl-mx {
-        font-size: 1.125rem;
-        line-height: 1.625rem;
+        font-size: 1.875rem;
+        line-height: 2.4rem;
     }
     .w-45 {
         width: 1.875rem;
@@ -140,29 +140,48 @@
     .logo-alt {
         max-width: 9.375rem;
     }
+    .pack-infography {
+        width: 300px !important;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 540px) {
+    .title-border-img {
+        bottom: -55px;
+    }
+    .page-title {
+        font-size: 1.875rem;
+        line-height: 2.4rem;
+    }
 }
 
 @media screen and (max-width: 375px) {
-    .fs-xxl-m {
-        font-size: 1rem;
-        line-height: normal;
+    .page > .container {
+        padding: 30px 10px;
+        /* overflow-y: scroll; */
+        overflow: hidden;
+    }
+    .page:last-child > .container {
+        overflow: hidden;
+        /* max-height: max-content; */
+    }
+    .page-title {
+        font-size: 1.875rem;
+        line-height: 2.4rem;
+    }
+    .title-border-img {
+        bottom: 0;
     }
     .pack-75-text, .pack-21-text {
         font-size: 0.4rem;
         top: -1.25rem;
     }
-    .fs-lg {
-        font-size: 0.85rem;
-    }
-    .fs-xl {
-        font-size: .90rem;
-    }
     .mini-text-box {
-        font-size: 0.75rem;
+        font-size: 0.5rem;
         line-height: normal;
     }
     .infograph-heading {
-        font-size: 0.65rem;
+        font-size: 0.575rem;
     }
     .w-45 {
         width: 1.4rem;
@@ -171,15 +190,7 @@
         height: 1.2rem;
     }
     .fs-normal {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         line-height: normal;
-    }
-    .fs-xxl-mx {
-        font-size: .85rem;
-        line-height: normal;
-    }
-    .pack-21-box img,
-    .pack-75-box img {
-        width: 70px;
     }
 }
