@@ -26,7 +26,6 @@ body {
     color: var(--dark-color);
     overflow-x: hidden;
 }
-
 span.color-primary {
 	font-weight: 800 !important;
 }
